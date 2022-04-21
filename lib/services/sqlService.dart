@@ -34,6 +34,7 @@ class SQLService {
       var qry = "CREATE TABLE IF NOT EXISTS shopping ( "
           "id INTEGER PRIMARY KEY,"
           "name TEXT,"
+          "description TEXT,"
           "image Text,"
           "price REAL ,"
           "fav INTEGER,"
@@ -44,6 +45,7 @@ class SQLService {
           "id INTEGER PRIMARY KEY,"
           "shop_id INTEGER,"
           "name TEXT,"
+          "description TEXT,"
           "image Text,"
           "price REAL,"
           "fav INTEGER,"
@@ -61,7 +63,7 @@ class SQLService {
     //simpan record
     await this.db?.transaction((txn) async {
       var qry =
-          'INSERT INTO shopping(name, price, image,rating,fav) VALUES("${data.name}",${data.price}, "${data.image}",${data.rating},${data.fav ? 1 : 0})';
+          'INSERT INTO shopping(name, description, price, image,rating,fav) VALUES("${data.name}", "${data.description}", ${data.price}, "${data.image}",${data.rating},${data.fav ? 1 : 0})';
       int id1 = await txn.rawInsert(qry);
       return id1;
     });
@@ -97,7 +99,7 @@ class SQLService {
     //tambahkan item ke cart
     await this.db?.transaction((txn) async {
       var qry =
-          'INSERT INTO cart_list(shop_id, name, price, image,rating,fav) VALUES(${data.id}, "${data.name}",${data.price}, "${data.image}",${data.rating},${data.fav ? 1 : 0})';
+          'INSERT INTO cart_list(shop_id, name, description, price, image,rating,fav) VALUES(${data.id}, "${data.name}", "${data.description}", ${data.price}, "${data.image}",${data.rating},${data.fav ? 1 : 0})';
       int id1 = await txn.rawInsert(qry);
       return id1;
     });

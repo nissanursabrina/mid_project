@@ -189,7 +189,8 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                     //keterangan item - default
                     padding: EdgeInsets.only(top: 10.0),
                     child: Text(
-                        "Makanan dan minuman disajikan dengan higenis demi menjaga kesehatan tubuh."),
+                      model.description,
+                    ),
                   )
                 ],
               ),

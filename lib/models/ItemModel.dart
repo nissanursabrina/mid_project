@@ -5,14 +5,18 @@ import 'package:flutter/cupertino.dart';
 var data = [
   {
     "name": "Steak Ayam",
+    "description":
+        "Steak ayam adalah makanan yang berbahan dasar ayam yang dicingncang dan di satukan kembali menjadi steak kita biasa menyebutnya, makanan enak ini bisa disajikan dengan kentang goreng sebagai pengganti nasi dan biasanya di padukan dengan beberapa sayur sayuran yang masih segar.",
     "price": 33.0,
     "fav": false,
     "rating": 4.6,
     "image":
-        "https://www.resepkuerenyah.com/wp-content/uploads/2021/07/cara-membuat-steak-ayam-768x429.jpg"
+        "https://www.resepkuerenyah.com/wp-content/uploads/2021/07/cara-membuat-steak-ayam-768x429.jpg",
   },
   {
-    "name": "Caramel Machiato",
+    "name": "Caramel Macchiato",
+    "description":
+        "Caramel Macchiato adalah kombinasi sirup vanilla, espresso, dan caramel. Rasanya cukup pas di lidah, yakni tidak terlalu pahit dan tidak terlalu manis.",
     "price": 20.5,
     "fav": false,
     "rating": 4.5,
@@ -20,6 +24,8 @@ var data = [
   },
   {
     "name": "Nasi Goreng",
+    "description":
+        "Nasi goreng merupakan sajian nasi yang digoreng dalam sebuah wajan atau penggorengan menghasilkan cita rasa berbeda karena dicampur dengan bumbu-bumbu seperti garam, bawang putih, bawang merah, dll.",
     "price": 23.5,
     "fav": false,
     "rating": 4.7,
@@ -28,6 +34,8 @@ var data = [
   },
   {
     "name": "Teh Tarik",
+    "description":
+        "Teh tarik adalah minuman manis berupa campuran teh dan susu yang lazim ditemukan di daerah Asia Tenggara, khususnya Indonesia, Malaysia, dan Singapura.",
     "price": 21.8,
     "fav": false,
     "rating": 4.4,
@@ -36,6 +44,8 @@ var data = [
   },
   {
     "name": "Nasi Uduk",
+    "description":
+        "Nasi uduk adalah hidangan yang dibuat dari nasi putih yang diaron dan dikukus dengan santan, serta dibumbui dengan pala, kayu manis, jahe, daun serai dan merica.",
     "price": 27.5,
     "fav": false,
     "rating": 4.3,
@@ -44,6 +54,8 @@ var data = [
   },
   {
     "name": "Kopi Tubruk",
+    "description":
+        "Kopi tubruk adalah minuman kopi khas Indonesia yang dibuat dengan menuangkan air panas ke dalam gelas atau teko yang sudah diisi bubuk kopi. Bisa dengan ditambahkan gula, bisa juga tanpa gula.",
     "price": 23.3,
     "fav": false,
     "rating": 4.0,
@@ -52,6 +64,8 @@ var data = [
   },
   {
     "name": "Dimsum Panggang Patin",
+    "description":
+        "Dimsum Panggang Patin adalah kulit dimsum yang diberi isian patin lalu dipanggang dengan api kecil.",
     "price": 36.2,
     "fav": false,
     "rating": 4.9,
@@ -60,6 +74,8 @@ var data = [
   },
   {
     "name": "Rainbow Smoothie",
+    "description":
+        "Rainbow Smoothie adalah minuman berbahan baku buah-buahan, sayuran, sirup gula/gula pasir, susu tawar cair dan es batu didesain warna-warni sangat menggoda dan menarik minat anak-anak.",
     "price": 24.5,
     "fav": false,
     "rating": 4.7,
@@ -70,6 +86,7 @@ var data = [
 
 class ShopItemModel {
   String name;
+  String description;
   double price;
   bool fav;
   double rating;
@@ -84,7 +101,8 @@ class ShopItemModel {
       this.rating,
       this.price,
       this.image,
-      this.name});
+      this.name,
+      this.description});
 
   factory ShopItemModel.fromJson(Map<String, dynamic> json) {
     return ShopItemModel(
@@ -94,6 +112,7 @@ class ShopItemModel {
       price: json['price'],
       image: json['image'],
       name: json['name'],
+      description: json['description'],
       shopId: json['shop_id'] ?? 0,
     );
   }
