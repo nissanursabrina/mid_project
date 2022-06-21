@@ -1,7 +1,7 @@
 //Nissa Nursabrina-2031710029-MI2E
 //menjembatani model dan view
-import 'package:kasirfoodorderingcopasokene/models/ItemModel.dart';
-import 'package:kasirfoodorderingcopasokene/services/itemService.dart';
+import 'package:kasirfoodordering/models/ItemModel.dart';
+import 'package:kasirfoodordering/services/itemService.dart';
 import 'package:get/get.dart'; //agar memasukkan dependensi dengan mudah
 
 class HomePageController extends GetxController {

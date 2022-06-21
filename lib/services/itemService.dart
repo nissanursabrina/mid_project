@@ -1,8 +1,8 @@
 //Nissa Nursabrina-2031710029-MI2E
 //jembatan dari item model dengan kedua service
-import 'package:kasirfoodorderingcopasokene/models/ItemModel.dart';
-import 'package:kasirfoodorderingcopasokene/services/sqlService.dart';
-import 'package:kasirfoodorderingcopasokene/services/storageService.dart';
+import 'package:kasirfoodordering/models/ItemModel.dart';
+import 'package:kasirfoodordering/services/sqlService.dart';
+import 'package:kasirfoodordering/services/storageService.dart';
 
 class ItemServices {
   SQLService sqlService = SQLService();

@@ -1,4 +1,5 @@
-name: kasirfoodorderingcopasokene //file pubspec.yaml inti yang digunakan untuk percobaan
+name: kasirfoodordering
+# file pubspec.yaml inti yang digunakan untuk percobaan
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to

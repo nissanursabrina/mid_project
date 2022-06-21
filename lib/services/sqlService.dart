@@ -1,5 +1,5 @@
 //Nissa Nursabrina-2031710029-MI2E
-import 'package:kasirfoodorderingcopasokene/models/ItemModel.dart';
+import 'package:kasirfoodordering/models/ItemModel.dart';
 import 'package:sqflite/sqflite.dart'; //SQL Database
 import 'package:path/path.dart'; //manipulasi path library agar lebih ringkas
 

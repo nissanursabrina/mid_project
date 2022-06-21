@@ -1,7 +1,7 @@
 //Nissa Nursabrina-2031710029-MI2E
 //Halaman Cart
-import 'package:kasirfoodorderingcopasokene/controller/homePageController.dart';
-import 'package:kasirfoodorderingcopasokene/models/ItemModel.dart';
+import 'package:kasirfoodordering/controller/homePageController.dart';
+import 'package:kasirfoodordering/models/ItemModel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
