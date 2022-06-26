@@ -4,33 +4,34 @@ import 'package:flutter/cupertino.dart';
 
 var data = [
   {
-    "name": "Steak Ayam",
+    "name": "Grilled Chicken Salad",
     "description":
-        "Steak ayam adalah makanan yang berbahan dasar ayam yang dicingncang dan di satukan kembali menjadi steak kita biasa menyebutnya, makanan enak ini bisa disajikan dengan kentang goreng sebagai pengganti nasi dan biasanya di padukan dengan beberapa sayur sayuran yang masih segar.",
-    "price": 33.0,
+        "Grilled Chicken Salad per porsinya memiliki energi 1259 kj, lemak 8.65g, protein 26.04g, serta karbohidrat 33.38g.",
+    "price": 170.0,
     "fav": false,
     "rating": 4.6,
     "image":
-        "https://www.resepkuerenyah.com/wp-content/uploads/2021/07/cara-membuat-steak-ayam-768x429.jpg",
+        "https://d2gtpjxvvd720b.cloudfront.net/system/recipe/image/3668/retina_hungry-girl-healthy-grilled-chicken-caprese-salad-recipe-20180724-1534-20227-9609.jpg",
   },
   {
-    "name": "Caramel Macchiato",
+    "name": "Egg Salad",
     "description":
-        "Caramel Macchiato adalah kombinasi sirup vanilla, espresso, dan caramel. Rasanya cukup pas di lidah, yakni tidak terlalu pahit dan tidak terlalu manis.",
-    "price": 20.5,
+        "Egg Salad per porsinya memiliki energi 2954 kj, lemak 67.18g, protein 20.42g, serta karbohidrat 4.28g.",
+    "price": 140.5,
     "fav": false,
     "rating": 4.5,
-    "image": "https://monkites.com/wp-content/uploads/caramel-macchiato3.jpg"
+    "image":
+        "https://www.foodies.pk/wp-content/uploads/2020/08/Egg-Salad-1536x1024.jpeg"
   },
   {
-    "name": "Nasi Goreng",
+    "name": "Mix Fruit Salad",
     "description":
-        "Nasi goreng merupakan sajian nasi yang digoreng dalam sebuah wajan atau penggorengan menghasilkan cita rasa berbeda karena dicampur dengan bumbu-bumbu seperti garam, bawang putih, bawang merah, dll.",
-    "price": 23.5,
+        "Mix Fruit Salad per porsinya memiliki energi 225 kj, lemak 0.81g, protein 0.63g, serta karnohidrat 12.5g.",
+    "price": 150.5,
     "fav": false,
     "rating": 4.7,
     "image":
-        "https://th.bing.com/th/id/OIP.lbwlgGXM98RLP7-c8-tV6AHaE7?pid=ImgDet&rs=1"
+        "https://th.bing.com/th/id/R.94874ffd46ca162253b6897d738be11d?rik=uzBGft%2f7uOJRAA&riu=http%3a%2f%2fcultureconsultants.ca%2fwp-content%2fuploads%2f2018%2f08%2ffruit-freshed-mixed-salad.jpg&ehk=PxlqHr54QWOVab1bvTmjMEDo2oeOxu6eDPG7Jz3ohPg%3d&risl=&pid=ImgRaw&r=0"
   },
   {
     "name": "Teh Tarik",
